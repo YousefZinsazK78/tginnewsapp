@@ -1,6 +1,10 @@
 package models
 
-import "time"
+import (
+	"time"
+
+	"github.com/lib/pq"
+)
 
 type Post struct {
 	NEWSID      int    `json:"id"`
@@ -10,6 +14,6 @@ type Post struct {
 	// DisLikes    int    `json:"dislikes"`
 	// Comments []comment
 	// private
-	CreatedAt time.Time `json:"createdat"`
-	UpdateAt  time.Time `json:"updatedat"`
+	CreatedAt time.Time   `json:"createdat"`
+	UpdatedAt pq.NullTime `json:"updatedat"`
 }
