@@ -14,7 +14,7 @@
 
 # todos :
 - [x] **prepare our project structure**
-- [ ] **add dependencies to project**
+- [x] **add dependencies to project**
 - [ ] **add logger to project**
 - [ ] **add auth and jwt middleware to router group**
 - [ ] **crud database for newspost and user**
