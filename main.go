@@ -36,7 +36,6 @@ func init() {
 }
 
 func main() {
-
 	//connect to db
 	dbConn, err := sql.Open("postgres", os.Getenv("DATABASEURL"))
 	if err != nil {
